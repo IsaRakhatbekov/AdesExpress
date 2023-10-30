@@ -1,0 +1,203 @@
+//========================================================================================================================================================
+// Header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+  padding: 35px 0;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+
+  @media (max-width:$tablet) {
+    padding: 20px 0;
+  }
+
+  @media (max-width:$mobile) {
+    padding: 15px 0;
+  }
+
+  &.active {
+    padding: 20px 0;
+    background-color: $color-green;
+    box-shadow: 1px 0 12px 5px #1d1c1c;
+
+    @media (max-width:$tablet) {
+      padding: 18px 0;
+    }
+
+    @media (max-width:$mobile) {
+      padding: 13px 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: Impact, sans-serif;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 220px;
+    max-height: 66px;
+    overflow: hidden;
+
+    @media (max-width:$mobile) {
+      max-width: 120px;
+    }
+  }
+
+  &__logo-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__links {
+    color: $mainColor;
+    font-family: Impact, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: -0.408px;
+    transition: all .3s;
+
+    &:hover {
+      transform: translateY(-1px);
+      text-decoration: underline;
+    }
+
+    @media (max-width:$mobileSmall) {
+      font-size: 12px;
+    }
+  }
+
+  &__contacts {
+    padding-right: 15px;
+    border-right: 1px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    @media (max-width:$tablet) {
+      display: none;
+    }
+
+  }
+
+  &__phone {
+    position: relative;
+    padding-left: 17px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 13px;
+      height: 13px;
+      background: url("../img/phone.svg") no-repeat center/contain;
+    }
+  }
+
+  &__time {
+    position: relative;
+    padding-left: 17px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 13px;
+      height: 13px;
+      background: url("../img/clock.svg") no-repeat center/contain;
+    }
+  }
+
+  &__reg-wrapper {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+    @media (max-width:$tablet) {
+      gap: 10px;
+      padding-left: 0;
+      flex-direction: column;
+      align-items: end;
+    }
+  }
+
+  &__sign-in {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__sign-up {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+//========================================================================================================================================================
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		z-index: 5;
+		@media (any-hover: none) {
+			cursor: default;
+		}
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/
+//========================================================================================================================================================

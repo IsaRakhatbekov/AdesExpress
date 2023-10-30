@@ -1,0 +1,165 @@
+//========================================================================================================================================================
+// Footer
+.footer {
+  padding: 20px 0;
+  background-color: $color-green;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width:$mobile) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    display: block;
+    overflow: hidden;
+    height: 70px;
+    max-width: 225px;
+    background: url("../img/footer-logo.svg") no-repeat center/cover;
+
+    @media (max-width:$mobile) {
+      margin: 0 auto;
+    }
+
+    &img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__logo-text {
+    max-width: 270px;
+    font-size: 7px;
+  }
+
+  &__blocks--second {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+  }
+
+  &__blocks--social {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width:$tablet) {
+      gap: 20px;
+    }
+  }
+
+  &__inner {
+    @media (max-width:$tablet) {
+      max-width: 200px;
+    }
+  }
+
+  &__links {
+    font-family: Impact;
+    font-size: 13px;
+    line-height: 1.3em;
+    letter-spacing: -0.408px;
+    position: relative;
+  }
+
+  &__links-location {
+    color: #FFF;
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+
+    @media (max-width:$tablet) {
+      font-size: 19px;
+    }
+
+    @media (max-width:$mobileSmall) {
+      font-size: 13px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -17px;
+      width: 17px;
+      height: 17px;
+      background: url("../img/location.svg") no-repeat center/contain;
+
+      @media (min-width:$tablet) {
+        display: none;
+      }
+
+      @media (max-width:$mobileSmall) {
+        top: -3px;
+      }
+    }
+  }
+
+  &__location-span {
+    display: block;
+    position: static;
+    font-family: "MontserratAlternates", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: -0.408px;
+
+    @media (max-width:$mobileSmall) {
+      font-size: 13px;
+      font-family: Impact, sans-serif;
+    }
+  }
+
+  &__links--phone {
+    display: block;
+    margin-bottom: 5px;
+
+    @media (min-width:$tablet) {
+      display: none;
+    }
+
+    & span {
+      display: block;
+      width: 13px;
+      height: 13px;
+      background: url("../img/phone.svg") no-repeat center/contain;
+      position: absolute;
+      top: 2px;
+      left: -15px;
+    }
+  }
+
+  &__links--time {
+    display: block;
+    text-align: start;
+
+    @media (min-width:$tablet) {
+      display: none;
+    }
+
+    & span {
+      display: block;
+      width: 13px;
+      height: 13px;
+      background: url("../img/clock.svg") no-repeat center/contain;
+      position: absolute;
+      top: 2px;
+      left: -15px;
+    }
+  }
+}
+
+//========================================================================================================================================================
