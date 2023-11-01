@@ -1,18 +1,44 @@
 .reg {
   padding: 40px 0;
+  color: $color-green;
 
-  &__container {
-    // max-width: 1200px;
+
+  @media (max-width:$mobileSmall) {
+    padding: 20px 0;
   }
 
   &__title {
+    @media (max-width:$mobileSmall) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3em;
+    letter-spacing: 0.06px;
     margin-bottom: 20px;
+
+    @media (max-width:$mobileSmall) {
+      display: none;
+    }
   }
 
   &__form {
     display: grid;
     gap: 40px 70px;
     grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+
+    @media (max-width: 1200px) {
+      gap: 40px 20px;
+    }
+
+    @media (max-width:$tablet) {
+      gap: 30px 20px;
+    }
 
     @media (max-width:$mobile) {
       gap: 30px;
@@ -90,6 +116,20 @@
     gap: 5px;
     margin-top: 4px;
     margin-left: 11px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    transform: translate(-100%, -100%);
+  }
+
+  &__fake-checkbox {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
   }
 
   &__btn {

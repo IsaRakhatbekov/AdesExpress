@@ -3,6 +3,10 @@
   color: $color-green;
   font-weight: 400;
 
+  @media (max-width:$mobileSmall) {
+    padding: 20px 0;
+  }
+
   &__fonts-style {
     line-height: 1.3em;
     letter-spacing: -0.408px;
@@ -22,15 +26,33 @@
     font-family: Impact;
     font-size: 24px;
     margin-bottom: 45px;
+
+    @media (max-width:$mobile) {
+      font-size: 21px;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width:$mobileSmall) {
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
   }
 
   &__subtitle {
     font-family: Impact;
     font-size: 20px;
+
+    @media (max-width:$mobileSmall) {
+      font-size: 17px;
+    }
   }
 
   &__list {
     margin: 20px 0 18px 40px;
+
+    @media (max-width:$mobileSmall) {
+      margin: 15px 0 15px 20px;
+    }
   }
 
   &__list li {
@@ -40,16 +62,37 @@
   &__items {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.3em;
+
+    @media (max-width:$mobile) {
+      font-size: 17px;
+    }
+
+    @media (max-width:$mobileSmall) {
+      font-size: 14px;
+    }
   }
 
   &__red-subtitle {
     color: $color-red;
     font-size: 20px;
     font-weight: 700;
+
+    @media (max-width:$mobileSmall) {
+      font-size: 17px;
+    }
   }
 
   &__red-list {
     margin: 20px 0 45px 40px;
+
+    @media (max-width:$mobile) {
+      margin: 18px 0 25px 40px;
+    }
+
+    @media (max-width:$mobileSmall) {
+      margin: 15px 0 25px 20px;
+    }
   }
 
   &__red-list li {
@@ -60,6 +103,15 @@
     color: $color-red;
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.3em;
+
+    @media (max-width:$mobile) {
+      font-size: 17px;
+    }
+
+    @media (max-width:$mobileSmall) {
+      font-size: 14px;
+    }
   }
 
   &__red-text {
@@ -67,6 +119,15 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 45px;
+
+    @media (max-width:$mobile) {
+      font-size: 16px;
+    }
+
+    @media (max-width:$mobileSmall) {
+      font-size: 14px;
+    }
+
   }
 
   &__red-title {
@@ -75,5 +136,9 @@
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+
+    @media (max-width:$mobileSmall) {
+      font-size: 17px;
+    }
   }
 }

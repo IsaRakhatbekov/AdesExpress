@@ -1,5 +1,14 @@
 .login {
   padding: 40px 0;
+  height: calc(100vh - 136px - 124px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (max-width:$mobileSmall) {
+    padding: 20px 0;
+  }
 
   &__title {
     font-size: 36px;
@@ -32,30 +41,25 @@
   &__form {
     max-width: 400px;
     margin: 0 auto;
-    margin-bottom: 64px;
-
-    @media (max-width:$tablet) {
-      margin-bottom: 50px;
-    }
-
-    @media (max-width:$mobile) {
-      margin-bottom: 35px;
-    }
+    margin-bottom: 30px;
 
     @media (max-width:$mobileSmall) {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
   }
 
   &__input {
-    display: block;
     width: 100%;
-    padding: 20px;
+    padding: 13px 21px;
     border-radius: 10px;
-    width: 100%;
-    margin: 0 auto;
+    border: 1px solid #0B3C26;
     border: 1px solid var(--black, #000);
+    color: $color-green;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
 
     @media (max-width:$mobile) {
       padding: 15px;
@@ -73,13 +77,11 @@
   &__checkbox-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 5px;
     margin-top: 4px;
 
     @media (max-width:$mobileSmall) {
-      justify-content: start;
-      margin-left: 11px;
+      // margin-left: 11px;
     }
   }
 

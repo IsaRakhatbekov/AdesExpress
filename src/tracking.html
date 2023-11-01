@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"MainPage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_static-header.htm',{})
+    <main class="page">
+      <!-- //-------------------------------------------------------------- -->
+      <!-- Tracking -->
+      <section class="tracking">
+        <div class="tracking__container">
+          <div class="tracking__wrapper">
+            <h1 class="tracking__title def-title">ОТСЛЕЖИВАНИЕ</h1>
+            <h2 class="tracking__subtitle">
+              Узнайте, где на данный момент находится Ваш груз или посылка
+            </h2>
+            <div class="tracking__input-wrapper">
+              <input class="tracking__input tracking-input" type="text" id="tracking"
+                placeholder="Введите ваш номер тут...">
+              <label class="tracking__label tracking-label" for="tracking">Введите Ваш трек номер и ножмите кнопку
+                “Отследить”.</label>
+            </div>
+            <button class="tracking__btn def-btn">ОТСЛЕДИТЬ</button>
+          </div>
+          <div class="tracking__status tracking-status">
+            <h3 class="tracking-status__title">Текущий статус:</h3>
+
+            <div class="tracking-status__line">
+              <div class="tracking-status__inner">
+                <span>на рассмотрении</span>
+              </div>
+            </div>
+
+            <span class="tracking-status__subtitle">Информация:</span>
+            <ul class="tracking-status__info tracking-info">
+              <li class="tracking-info__items">
+                <span class="tracking-info__naming">Код:</span>
+                <span class="tracking-info__date">E-090</span>
+              </li>
+              <li class="tracking-info__items">
+                <span class="tracking-info__naming">Штрих:</span>
+                <span class="tracking-info__date">JT1234567890872</span>
+              </li>
+              <li class="tracking-info__items">
+                <span class="tracking-info__naming">Вес:</span>
+                <span class="tracking-info__date">0,9</span>
+              </li>
+              <li class="tracking-info__items">
+                <span class="tracking-info__naming">Был принят на склад:</span>
+                <span class="tracking-info__date">в процессе</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- //-------------------------------------------------------------- -->
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

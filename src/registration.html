@@ -12,53 +12,60 @@
       <!-- Registration -->
       <section class="reg">
         <div class="reg__container">
-          <h1 class="reg__title def-title">СОЗДАТЬ АККАУНТ</h1>
-          <h2 class="reg__subtitle">Все поля заполнения обязательны*</h2>
-          <form class="reg__form" action="">
-            <div class="reg__inputs-wrapper">
-              <input class="reg__input" type="text" placeholder="*Имя">
-            </div>
-            <div class="reg__inputs-wrapper">
-              <input class="reg__input" type="text" id="surname" placeholder="*Фамилия">
-              <label class="reg__label" for="surname">
-                *Введите свое имя на русском языке
-              </label>
-            </div>
-            <div class="reg__date-wrapper">
-              <input class="reg__input reg__date-input" type="text" id="date" placeholder="*Дата">
-              <label class="reg__label reg__date-label" for="date">
-                *Введите свою дату рождения
-              </label>
-              <input class="reg__input" type="text" id="date" placeholder="*месяц">
-              <input class="reg__input" type="text" id="date" placeholder="*год">
-            </div>
-            <input class="reg__input" type="text" placeholder="*Город/Регион проживания">
-            <div class="reg__inputs-wrapper">
-              <input class="reg__input" type="email" placeholder="*E-mail адрес">
-            </div>
-            <div class="reg__inputs-wrapper">
-              <input class="reg__input" type="text" id="phone" placeholder="*Телефон">
-              <div class="reg__checkbox-wrapper">
-                <input class="reg__checkbox" type="checkbox" id="checkbox">
-                <label class="reg__label" for="checkbox">
-                  На этом номере есть whatsApp
+          <div class="reg__wrapper">
+            <h1 class="reg__title def-title">СОЗДАТЬ АККАУНТ</h1>
+            <h2 class="reg__subtitle">Все поля заполнения обязательны*</h2>
+            <form class="reg__form" action="">
+              <div class="reg__inputs-wrapper">
+                <input class="reg__input" type="text" placeholder="Имя">
+              </div>
+              <div class="reg__inputs-wrapper">
+                <input class="reg__input" type="text" id="surname" placeholder="Фамилия">
+                <label class="reg__label" for="surname">
+                  *Введите свое имя на русском языке
                 </label>
               </div>
-            </div>
-            <div class="reg__inputs-wrapper">
-              <input class="reg__input" type="password" placeholder="*Пароль">
-              <label class="reg__label" for="#">
-                *минимально 6 символов
-              </label>
-            </div>
-            <div class="reg__inputs-wrapper">
-              <input class="reg__input" type="password" placeholder="**Повторите пароль">
-              <label class="reg__label" for="#">
-                *минимально 6 символов
-              </label>
-            </div>
-          </form>
-          <button class="reg__btn def-btn" type="submit">Зарегистрироваться</button>
+              <div class="reg__date-wrapper">
+                <input class="reg__input reg__date-input" type="text" id="date" placeholder="Дата">
+                <label class="reg__label reg__date-label" for="date">
+                  *Введите свою дату рождения
+                </label>
+                <input class="reg__input" type="text" placeholder="месяц">
+                <input class="reg__input" type="text" placeholder="год">
+              </div>
+              <input class="reg__input" type="text" placeholder="Город/Регион проживания">
+
+              <div class="reg__inputs-wrapper">
+                <input class="reg__input" type="text" id="phone" placeholder="номер телефона">
+
+                <div class="reg__checkbox-wrapper">
+                  <input class="reg__checkbox" type="checkbox" id="checkbox">
+                  <span class="reg__fake-checkbox" id="fakeCheckbox"></span>
+                  <label class="reg__label reg__checkbox-label" for="checkbox">
+                    На этом номере есть whatsApp
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="reg__inputs-wrapper">
+                <input class="reg__input" type="email" placeholder="адрес электронной почты">
+              </div>
+              <div class="reg__inputs-wrapper">
+                <input class="reg__input" type="password" placeholder="Пароль">
+                <label class="reg__label" for="#">
+                  *минимально 6 символов
+                </label>
+              </div>
+              <div class="reg__inputs-wrapper">
+                <input class="reg__input" type="password" placeholder="Повторите пароль">
+                <label class="reg__label" for="#">
+                  *минимально 6 символов
+                </label>
+              </div>
+            </form>
+            <button class="reg__btn def-btn" type="submit">Зарегистрироваться</button>
+          </div>
         </div>
       </section>
       <!-- //-------------------------------------------------------------- -->
